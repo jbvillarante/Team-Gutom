@@ -11,7 +11,61 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120303192014) do
+ActiveRecord::Schema.define(:version => 20120304084848) do
+
+  create_table "customers", :force => true do |t|
+    t.string   "lastname"
+    t.string   "firstname"
+    t.string   "address"
+    t.string   "telephone_no"
+    t.string   "mobile_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "employees", :force => true do |t|
+    t.string   "lastname"
+    t.string   "firstname"
+    t.string   "role"
+    t.integer  "salary"
+    t.integer  "sss_no"
+    t.string   "tin"
+    t.integer  "philhealth"
+    t.string   "address"
+    t.string   "telephone_no"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "product_materials", :force => true do |t|
+    t.integer  "rawmaterial_id"
+    t.integer  "product_id"
+    t.integer  "quantity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "product_materials", ["product_id"], :name => "index_product_materials_on_product_id"
+  add_index "product_materials", ["rawmaterial_id"], :name => "index_product_materials_on_rawmaterial_id"
+
+  create_table "products", :force => true do |t|
+    t.string   "name"
+    t.integer  "price"
+    t.integer  "stock_qty"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "purchase_transactions", :force => true do |t|
+    t.integer  "transaction_id"
+    t.integer  "quantity"
+    t.integer  "total_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "purchase_transactions", ["transaction_id"], :name => "index_purchase_transactions_on_transaction_id"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
@@ -25,6 +79,49 @@ ActiveRecord::Schema.define(:version => 20120303192014) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "raw_materials", :force => true do |t|
+    t.integer  "supplier_id"
+    t.integer  "stock_qty"
+    t.integer  "price"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "raw_materials", ["supplier_id"], :name => "index_raw_materials_on_supplier_id"
+
+  create_table "sale_transactions", :force => true do |t|
+    t.integer  "product_id"
+    t.integer  "transaction_id"
+    t.integer  "quantity"
+    t.integer  "total_price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sale_transactions", ["product_id"], :name => "index_sale_transactions_on_product_id"
+  add_index "sale_transactions", ["transaction_id"], :name => "index_sale_transactions_on_transaction_id"
+
+  create_table "suppliers", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "telephone_no"
+    t.string   "email"
+    t.string   "tin"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "transactions", :force => true do |t|
+    t.integer  "employee_id"
+    t.string   "transaction_type"
+    t.integer  "amount_paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "transactions", ["employee_id"], :name => "index_transactions_on_employee_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",               :default => "", :null => false
