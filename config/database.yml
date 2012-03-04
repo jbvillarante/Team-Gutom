@@ -1,4 +1,5 @@
 development:
   adapter: mysql2
   username: root
+  password: password
   database: team_gutom_development
