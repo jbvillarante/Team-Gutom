@@ -6,7 +6,7 @@ class CreateEmployees < ActiveRecord::Migration
       t.string :role
       t.integer :salary
       t.integer :sss_no
-      t.integer :tin
+      t.string :tin
       t.integer :philhealth
       t.string :address
       t.string :telephone_no
