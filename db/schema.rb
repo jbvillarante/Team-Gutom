@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120304084848) do
+ActiveRecord::Schema.define(:version => 20120307010128) do
 
   create_table "customers", :force => true do |t|
     t.string   "lastname"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20120304084848) do
   end
 
   create_table "product_materials", :force => true do |t|
-    t.integer  "rawmaterial_id"
+    t.integer  "raw_material_id"
     t.integer  "product_id"
     t.integer  "quantity"
     t.datetime "created_at"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(:version => 20120304084848) do
   end
 
   add_index "product_materials", ["product_id"], :name => "index_product_materials_on_product_id"
-  add_index "product_materials", ["rawmaterial_id"], :name => "index_product_materials_on_rawmaterial_id"
+  add_index "product_materials", ["raw_material_id"], :name => "index_product_materials_on_raw_material_id"
 
   create_table "products", :force => true do |t|
     t.string   "name"
@@ -119,6 +119,7 @@ ActiveRecord::Schema.define(:version => 20120304084848) do
     t.integer  "amount_paid"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "customer_id"
   end
 
   add_index "transactions", ["employee_id"], :name => "index_transactions_on_employee_id"

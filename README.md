@@ -31,8 +31,9 @@ Employee includes everyone who works for the restaurant. As mentioned earlier, a
     * Address
     * Email
     * Telephone Number
-* On Destroy
-  Instead of deleting the employee, the system will only provide the user a way of toggling employee status from active to inactive.
+
+    Note on deleting employee record:
+        Instead of deleting the employee, the system will only provide the user a way of toggling employee status from active to inactive.
 
 #### CRUD supplier
 * Supplier Profile
