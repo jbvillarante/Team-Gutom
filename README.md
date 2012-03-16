@@ -86,8 +86,6 @@ This item corresponds to the dishes served by the restaurant or caterer. The col
     * employee in charge
     * date & time
 
-
-
 ## Entities and Relationships
 * Entities (Attributes):
     * Employee (id, lastname, firstname, role, salary, tin, sss_no, philhealth, address, email, telephone_no)

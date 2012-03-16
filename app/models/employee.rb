@@ -2,12 +2,15 @@ class Employee < ActiveRecord::Base
   Roles = ["admin", "driver", "waiter", "manager", "cashier"]
 
   has_many :transactions
+  has_one :user
+  validates_uniqueness_of :email
 
   after_create :create_user_if_admin
 
   private
 
   def create_user_if_admin
-    User.create!(:email => email, :password => 'password') if role == 'admin'
+    #temporary password = 'password'
+    User.create!(:email => email, :password => 'password', :admin => true, :employee_id => self.id) if role == 'admin'
   end
 end
