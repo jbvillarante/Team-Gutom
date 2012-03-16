@@ -19,6 +19,19 @@ RailsAdmin.config do |config|
   config.main_app_name = ['Team Gutom', 'Admin']
 
   ['Populator'].each { |m| config.excluded_models << m }
+  config.model PurchaseTransaction do
+    hide
+  end
+  config.model SaleTransaction do
+    hide
+  end
+  config.model SaleTransaction do
+    hide
+  end
+  config.model Delivery do
+    hide
+  end
+
   # or for a dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 

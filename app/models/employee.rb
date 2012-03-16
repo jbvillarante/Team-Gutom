@@ -7,6 +7,10 @@ class Employee < ActiveRecord::Base
 
   after_create :create_user_if_admin
 
+  def name
+    "#{lastname}, #{firstname}"
+  end
+
   private
 
   def create_user_if_admin

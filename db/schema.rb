@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120316023331) do
+ActiveRecord::Schema.define(:version => 20120316051432) do
 
   create_table "customers", :force => true do |t|
     t.string   "lastname"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(:version => 20120316023331) do
     t.string   "address"
     t.string   "telephone_no"
     t.string   "mobile_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "deliveries", :force => true do |t|
+    t.float    "total_price"
+    t.integer  "head_count"
+    t.datetime "delivery_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -63,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20120316023331) do
     t.integer  "total_price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "raw_material_id"
   end
 
   add_index "purchase_transactions", ["transaction_id"], :name => "index_purchase_transactions_on_transaction_id"
@@ -115,11 +124,11 @@ ActiveRecord::Schema.define(:version => 20120316023331) do
 
   create_table "transactions", :force => true do |t|
     t.integer  "employee_id"
-    t.string   "transaction_type"
     t.integer  "amount_paid"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "customer_id"
+    t.integer  "delivery_id"
   end
 
   add_index "transactions", ["employee_id"], :name => "index_transactions_on_employee_id"
