@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :employee_id
+
+  def name
+    employee.try(:name) || email
+  end
 end
