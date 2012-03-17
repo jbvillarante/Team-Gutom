@@ -32,6 +32,8 @@ RailsAdmin.config do |config|
     hide
   end
 
+  config.audit_with :history, User
+
   # or for a dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 
