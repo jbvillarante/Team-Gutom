@@ -3,5 +3,6 @@ TeamGutom::Application.routes.draw do
 
   devise_for :users
 
+  resource :reports
   root :to => "home#index"
 end

@@ -16,7 +16,10 @@
 		</div>
 		<ul>
 			<li class="<%= params[:controller] == 'home' ? 'current' : '' %>"><a href="/"><span>Menu</span></a></li>
-			<li class="<%= params[:controller] == 'devise/sessions' ? 'current' : '' %>"><a href="/admin"><span>Admin</span></a></li>
+            <% if current_user.present? %>
+              <li class="<%= params[:controller] == 'reports' ? 'current' : '' %>"><a href="/reports"><span>Reports</span></a></li>
+            <% end %>
+            <li class="<%= params[:controller] == 'devise/sessions' ? 'current' : '' %>"><a href="/admin"><span>Admin</span></a></li>
 		</ul>
 	</div>
 	<div id="body">

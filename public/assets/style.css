@@ -221,6 +221,10 @@ div.sign-in {
     margin-bottom: 20px;
 }
 
+div.reports {
+    margin-left: 30px;
+}
+
 div.body span a,
 div.body h3 a {
 	color: #706758;
