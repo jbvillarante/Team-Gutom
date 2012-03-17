@@ -19,13 +19,10 @@ RailsAdmin.config do |config|
   config.main_app_name = ['Team Gutom', 'Admin']
 
   ['Populator'].each { |m| config.excluded_models << m }
-  config.model PurchaseTransaction do
+  config.model PurchaseMaterial do
     hide
   end
-  config.model SaleTransaction do
-    hide
-  end
-  config.model SaleTransaction do
+  config.model SaleProduct do
     hide
   end
   config.model Delivery do

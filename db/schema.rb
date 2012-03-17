@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120317102212) do
+ActiveRecord::Schema.define(:version => 20120317130656) do
 
   create_table "customers", :force => true do |t|
     t.string   "lastname"
@@ -69,8 +69,8 @@ ActiveRecord::Schema.define(:version => 20120317102212) do
     t.datetime "image_updated_at"
   end
 
-  create_table "purchase_transactions", :force => true do |t|
-    t.integer  "transaction_id"
+  create_table "purchase_materials", :force => true do |t|
+    t.integer  "purchase_transaction_id"
     t.integer  "quantity"
     t.integer  "total_price"
     t.datetime "created_at"
@@ -78,7 +78,15 @@ ActiveRecord::Schema.define(:version => 20120317102212) do
     t.integer  "raw_material_id"
   end
 
-  add_index "purchase_transactions", ["transaction_id"], :name => "index_purchase_transactions_on_transaction_id"
+  add_index "purchase_materials", ["purchase_transaction_id"], :name => "index_purchase_transactions_on_transaction_id"
+
+  create_table "purchase_transactions", :force => true do |t|
+    t.integer  "employee_id"
+    t.float    "quantity"
+    t.float    "amount_paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
@@ -104,17 +112,28 @@ ActiveRecord::Schema.define(:version => 20120317102212) do
 
   add_index "raw_materials", ["supplier_id"], :name => "index_raw_materials_on_supplier_id"
 
-  create_table "sale_transactions", :force => true do |t|
+  create_table "sale_products", :force => true do |t|
     t.integer  "product_id"
-    t.integer  "transaction_id"
+    t.integer  "sale_transaction_id"
     t.integer  "quantity"
     t.integer  "total_price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "sale_transactions", ["product_id"], :name => "index_sale_transactions_on_product_id"
-  add_index "sale_transactions", ["transaction_id"], :name => "index_sale_transactions_on_transaction_id"
+  add_index "sale_products", ["product_id"], :name => "index_sale_transactions_on_product_id"
+  add_index "sale_products", ["sale_transaction_id"], :name => "index_sale_transactions_on_transaction_id"
+
+  create_table "sale_transactions", :force => true do |t|
+    t.integer  "employee_id"
+    t.integer  "amount_paid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "customer_id"
+    t.integer  "delivery_id"
+  end
+
+  add_index "sale_transactions", ["employee_id"], :name => "index_transactions_on_employee_id"
 
   create_table "suppliers", :force => true do |t|
     t.string   "name"
@@ -125,17 +144,6 @@ ActiveRecord::Schema.define(:version => 20120317102212) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "transactions", :force => true do |t|
-    t.integer  "employee_id"
-    t.integer  "amount_paid"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "customer_id"
-    t.integer  "delivery_id"
-  end
-
-  add_index "transactions", ["employee_id"], :name => "index_transactions_on_employee_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",               :default => "", :null => false

@@ -1,8 +1,8 @@
 class PurchaseTransaction < ActiveRecord::Base
-  belongs_to :transaction
-  belongs_to :raw_material
+  belongs_to :employee
+  has_many :purchase_materials
 
   def name
-    "#{quantity} #{raw_material.try(:name)} @#{total_price}"
+    "#{id} - #{created_at.strftime("%b %d, %Y")}" if created_at.present?
   end
 end

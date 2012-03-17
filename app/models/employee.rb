@@ -1,7 +1,8 @@
 class Employee < ActiveRecord::Base
   Roles = ["admin", "driver", "waiter", "manager", "cashier"]
 
-  has_many :transactions
+  has_many :sale_transactions
+  has_many :purchase_transactions
   has_one :user
   validates_uniqueness_of :email
 

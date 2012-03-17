@@ -15,8 +15,8 @@
 			<a href="/"><img src="/assets/logo.gif" alt="Logo"></a>
 		</div>
 		<ul>
-			<li class="current"><a href="/"><span>Home</span></a></li>
-			<li><a href="/admin"><span>Admin</span></a></li>
+			<li class="<%= params[:controller] == 'home' ? 'current' : '' %>"><a href="/"><span>Menu</span></a></li>
+			<li class="<%= params[:controller] == 'devise/sessions' ? 'current' : '' %>"><a href="/admin"><span>Admin</span></a></li>
 		</ul>
 	</div>
 	<div id="body">
