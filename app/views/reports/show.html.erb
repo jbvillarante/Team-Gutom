@@ -22,7 +22,7 @@
   <li>
     <h3><a href='/admin/product'>Products</a></h3>
     <% if @products.count == 0 %>
-        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
+        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical products." %></span>
     <% end %>
     <table>
       <% @products.each do |product| %>
@@ -37,7 +37,7 @@
   <li>
     <h3><a href='/admin/delivery'>Scheduled Deliveries</a></h3>
     <% if @deliveries.count == 0 %>
-        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
+        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No scheduled deliveries." %></span>
     <% end %>
     <table>
       <% @deliveries.each do |delivery| %>
