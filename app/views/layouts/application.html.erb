@@ -4,7 +4,7 @@
   <title>TeamGutom</title>
   <%= stylesheet_link_tag :style %>
   <%= javascript_include_tag :"jquery-1.5.2.min.js" %>
-  <%= javascript_include_tag :"xeforo.js" %>
+  <%= javascript_include_tag :"xenforo.js" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -16,11 +16,12 @@
 		</div>
 		<ul>
 			<li class="<%= params[:controller] == 'home' ? 'current' : '' %>"><a href="/"><span>Menu</span></a></li>
+            <li class="<%= params[:controller] == 'reports' ? 'current' : '' %>"><a href="/reports"><span>Reports</span></a></li>
+            <li><a href="/admin"><span>Admin</span></a></li>
             <% if current_user.present? %>
-              <li class="<%= params[:controller] == 'reports' ? 'current' : '' %>"><a href="/reports"><span>Reports</span></a></li>
-            <% end %>
-            <li class="<%= params[:controller] == 'devise/sessions' ? 'current' : '' %>"><a href="/admin"><span>Admin</span></a></li>
-		</ul>
+              <li><a href="/users/sign_out"><span>Logout</span></a></li>
+		    <% end %>
+        </ul>
 	</div>
 	<div id="body">
         <%= yield %>

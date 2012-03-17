@@ -1,11 +1,14 @@
 <div class="reports">
-  <h1>Reports</h1>
+  <h1>Alerts</h1>
 </div>
 
 <ul>
 
   <li>
-    <h3>Raw Material Inventory</h3>
+    <h3><a href='/admin/raw_material'>Raw Materials</a></h3>
+    <% if @raw_materials.count == 0 %>
+        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
+    <% end %>
     <table>
       <% @raw_materials.each do |raw_material| %>
           <tr>
@@ -17,7 +20,10 @@
     </table>
   </li>
   <li>
-    <h3>Product Inventory</h3>
+    <h3><a href='/admin/product'>Products</a></h3>
+    <% if @products.count == 0 %>
+        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
+    <% end %>
     <table>
       <% @products.each do |product| %>
           <tr>
@@ -29,7 +35,10 @@
     </table>
   </li>
   <li>
-    <h3>Scheduled Deliveries</h3>
+    <h3><a href='/admin/delivery'>Scheduled Deliveries</a></h3>
+    <% if @deliveries.count == 0 %>
+        <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
+    <% end %>
     <table>
       <% @deliveries.each do |delivery| %>
           <tr>
