@@ -16,6 +16,6 @@ class Employee < ActiveRecord::Base
 
   def create_user_if_admin
     #temporary password = 'password'
-    User.create!(:email => email, :password => 'password', :admin => true, :employee_id => self.id) if role == 'admin'
+    User.create!(:email => email, :password => 'password', :admin => true, :employee_id => self.id) if role == 'admin' or role == 'manager'
   end
 end

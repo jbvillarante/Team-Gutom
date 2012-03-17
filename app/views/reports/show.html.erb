@@ -7,7 +7,7 @@
   <li>
     <h3>Raw Material Inventory</h3>
     <table>
-      <% RawMaterial.all.each do |raw_material| %>
+      <% @raw_materials.each do |raw_material| %>
           <tr>
               <td><%= raw_material.name %></td>
               <td><%= raw_material.stock_qty %></td>
@@ -18,7 +18,7 @@
   <li>
     <h3>Product Inventory</h3>
     <table>
-      <% Product.all.each do |product| %>
+      <% @products.each do |product| %>
           <tr>
               <td><%= product.name %></td>
               <td><%= product.stock_qty %></td>
@@ -29,7 +29,7 @@
   <li>
     <h3>Scheduled Deliveries</h3>
     <table>
-      <% Delivery.all.each do |delivery| %>
+      <% @deliveries.each do |delivery| %>
           <tr>
               <td><%= delivery.delivery_date.strftime("%b %d") %></td>
               <td><%= delivery.sale_transaction.customer.name %></td>
