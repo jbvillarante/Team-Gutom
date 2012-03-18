@@ -5,6 +5,8 @@ class SaleTransaction < ActiveRecord::Base
 
   has_many :sale_products
 
+  validates_numericality_of :amount_paid
+
   after_create :deduct_product_stocks
   after_destroy :add_product_stocks
 
