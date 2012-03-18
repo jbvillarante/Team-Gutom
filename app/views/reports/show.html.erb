@@ -5,7 +5,10 @@
 <ul>
 
   <li>
-    <h3><a href='/admin/raw_material'>Raw Materials</a></h3>
+    <h3>
+      <a href='/admin/raw_material'>Raw Materials</a>
+      <a href='/admin/purchase_transaction/new' style="display: inline-block;"><img src='/assets/plus.png' width="15px"/></a>
+    </h3>
     <% if @raw_materials.count == 0 %>
         <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical raw materials." %></span>
     <% end %>
@@ -20,7 +23,10 @@
     </table>
   </li>
   <li>
-    <h3><a href='/admin/product'>Products</a></h3>
+    <h3>
+      <a href='/admin/product'>Products</a>
+      <a href='/admin/production/new' style="display: inline-block;"><img src='/assets/plus.png' width="15px"/></a>
+    </h3>
     <% if @products.count == 0 %>
         <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No critical products." %></span>
     <% end %>
@@ -35,7 +41,10 @@
     </table>
   </li>
   <li>
-    <h3><a href='/admin/delivery'>Scheduled Deliveries</a></h3>
+    <h3>
+      <a href='/admin/delivery'>Scheduled Deliveries</a>
+      <a href='/admin/sale_transaction/new' style="display: inline-block;"><img src='/assets/plus.png' width="15px"/></a>
+    </h3>
     <% if @deliveries.count == 0 %>
         <span style="color:green; font-weight: 100; padding-top: 8px;"><%= "No scheduled deliveries." %></span>
     <% end %>
