@@ -28,6 +28,9 @@ RailsAdmin.config do |config|
   config.model Delivery do
     hide
   end
+  config.model ProductMaterial do
+    hide
+  end
 
   config.audit_with :history, User
 
