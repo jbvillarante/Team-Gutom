@@ -6,4 +6,8 @@ class Product < ActiveRecord::Base
   def raw_materials
     product_materials.collect(&:raw_material)
   end
+
+  def picture_from_url(url)
+    self.image = open(url)
+  end
 end
