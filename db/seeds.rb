@@ -36,7 +36,7 @@ products.each do |product|
   raw_materials = product[4].split(',')
 
   raw_materials.each do |rm|
-    if rm.to_i > 0 and rm.to_i < 105
+    if rm.to_i > 0 and rm.to_i <= 105
       ProductMaterial.create!(:product => p, :raw_material => RawMaterial.find(rm.to_i),
                             :quantity => Forgery(:basic).number(:at_least => 1, :at_most => 10))
     end
