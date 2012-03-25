@@ -1,8 +1,8 @@
 ['employees', 'users', 'suppliers', 'products', 'raw_materials', 'deliveries',
  'product_materials', 'productions', 'purchase_materials',
  'purchase_transactions', 'sale_transactions', 'sale_products', 'customers'].each do |table|
-  ActiveRecord::Base.connection.execute("DELETE FROM #{table};")
-  ActiveRecord::Base.connection.execute("ALTER TABLE #{table} AUTO_INCREMENT = 1;")
+#  ActiveRecord::Base.connection.execute("DELETE FROM #{table};")
+#  ActiveRecord::Base.connection.execute("ALTER TABLE #{table} AUTO_INCREMENT = 1;")
 end
 
 
