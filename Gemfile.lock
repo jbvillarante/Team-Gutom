@@ -191,6 +191,7 @@ DEPENDENCIES
   fastercsv
   fixture_builder
   forgery (>= 0.3.6)
+  haml (~> 3.1.4)
   mysql2 (~> 0.3.10)
   nokogiri
   paperclip (~> 2.7)

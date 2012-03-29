@@ -6,6 +6,7 @@ gem 'pg'
 gem 'devise'
 gem 'nokogiri'
 gem 'fastercsv'
+gem 'haml', '~> 3.1.4'
 gem 'rails_admin', :git => "https://github.com/sferik/rails_admin.git", :ref => '1ccd2fabce712ca1cb154fd17fbd71d6a8a305e0'
 gem 'forgery', '>= 0.3.6'
 gem 'paperclip', "~> 2.7"
