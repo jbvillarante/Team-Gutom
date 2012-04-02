@@ -1,50 +1,50 @@
-Creamy Pesto Shrimp,1,200.00,10,"1, 7, 16, 17, 18, 19, 26"
-Cajun Seafood Pasta,2,250.00,10,"16, 6, 12, 7, 5, 10, 26, 28, 3, 19, 22"
-Peppered Shrimp Alfredo,3,200.00,10,"2, 18, 13, 5, 9, 14, 26, 15, 21, 16, 7, 12 10"
-Maine Lobster Lasagna,4,250.00,10,"4, 20, 23, 24, 19, 5, 8, 7, 10, 15, 27, "
-Garlic Anchovy Linguine,5,200.00,10,"13, 8, 14, 5, 11, 10, 1, 7"
-Guacomole,6,90.00,10,"29, 30, 12, 5, 2, 8, 7"
-Fruit Salsa and Cinnamon Chips,7,90.00,10,"31, 32, 33, 34, 35, 36, 37, 38, 18"
-Buffalo Chicken Wings,8,130.00,10,"39, 49, 41, 42, 43, 7, 12, 18"
-Double Tomato Bruschetta,9,120.00,10,"11, 8, 13, 44, 6, 7, 12, 24"
-Marinated Grilled Shrimp,10,150.00,10,"8, 13, 45, 44, 6, 41, 26"
-Ham and Potato Soup,11,60.00,10,"46, 47, 48, 49, 50, 51, 7, 12,39, 18"
-Boilermaker Tailgate Chili,12,80.00,10,"52, 53, 54, 55, 56, 5, 6, 7, 8, 9, 12"
-Spicy Chicken Soup,13,60.00,10,"49, 42, 7, 43, 10, 50, 13, 11, 54"
-Italian Sausage Soup,14,60.00,10,"53, 57, 58, 59, 60, 7, 8, 12"
-Zuppa Toscana,15,60.00,10,"53, 55, 5, 8, 50, 46, 60, 16"
-Gourmet Sweet Potato,16,80.00,10,"98, 12, 18, 71, 37, 16, 39, 36"
-Gourmet Mushroom Risotto,17,80.00,10,"50, 13, 14, 12, 7, 18, 19, 97"
-Onion Rings,18,80.00,10,"5, 39, 73, 12, 71, 51, 88, 12"
-Mushroom with a Soy Sauce Glaze,19,80.00,10,"14, 18, 8, 7, 96"
-Over-Roasted Asparagus,20,80.00,10,"95, 13, 19, 8, 12, 7, 69"
-Old Settlers' Baked Beans,21,80.00,10,"52, 55, 5, 35, 36, 93, 7, 94"
-Roquefort Pear Salad,22,150.00,10,"103, 104, 105, 29, 5, 13, 44, 8, 7, 12"
-Holiday Chicken Salad,23,150.00,10,"42, 40, 47, 5, 9, 12, 7"
-Broccoli Salad,24,150.00,10,"102, 55, 5, 44, 35"
-Strawberry Spinach Salad,25,150.00,10,"35, 13, 44, 40, 56, 5, 60, 34"
-Mexican Bean Salad,26,150.00,10,"99, 100, 101, 9, 5, 30, 69, 35, 12, 8, 7"
-Chicken Cordon Bleu,27,220.00,10,"42, 22,48, 39, 40, 18, 50, 68"
-Baby Back Ribs,28,300.00,10,"92, 93, 12, 7"
-Garlic Prime Rib,29,300.00,10,"91, 8, 13, 7, 12"
-Rosemary Roasted Turkey,30,280.00,10,"90, 13, 8, 87, 6, 7, 12"
-Roasted Rack of Lamb,31,320.00,10,"87, 88, 89, 12, 8, 7, 13"
-California Grilled Veggie Sandwich,32,180.00,10,"8, 69, 13, 9, 59, 5, 86, 22"
-Grilled Cheese Sandwich,33,160.00,10,"86, 18, 23"
-Apple Pie,34,100.00,10,"32, 35, 36, 49, 39, 18, 85"
-Too Much Chocolate Cake,35,100.00,10,"81, 82, 83, 84, 72, 71, 49"
-Peanut Butter Cup Cookies,36,90.00,10,"39, 12, 73, 18, 35, 80, 36, 71, 51"
-White Chocolate Raspberry Cheesecake,37,120.00,10,"35, 18, 49, 71, 77, 33"
-Banana Pudding,38,90.00,10,"78, 77, 79, 51, 68, 75"
-OREO Truffles,39,120.00,10,"67, 76, 77"
-Banana Crumb Muffin,40,100.00,10,"39, 73, 12, 75, 35, 71, 18, 36, 37"
-Zucchini Bread,41,100.00,10,"39, 12, 73, 37, 71, 72, 35, 59"
-Fluffy Pancakes,42,100.00,10,"51, 39, 35, 73, 12, 71, 18"
-Downeast Maine Pumpkin Bread,43,100.00,10,"70, 71, 72, 73, 74, 39, 35, 12, 49"
-Lemonade,44,30.00,10,"69, 35, 49, 61"
-Chocolate Chocolate Milkshake,45,50.00,10,"66, 67, 63, 68"
-Vanilla Milkshake,46,80.00,10,"62, 61, 51"
-Watermelon Milkshake,47,80.00,10,"65, 62, 51, 35"
-Apple Milkshake,48,80.00,10,"51, 35, 62, 32"
-Chocolate Mint Milkshake,49,80.00,10,"62, 63, 64, 51"
-Avocado Milkshake,50,80.00,10,"29, 51, 61, 35, 30, 62"
+1,Creamy Pesto Shrimp,200.00,10
+2,Cajun Seafood Pasta,250.00,10
+3,Peppered Shrimp Alfredo,200.00,10
+4,Maine Lobster Lasagna,250.00,10
+5,Garlic Anchovy Linguine,200.00,10
+6,Guacomole,90.00,10
+7,Fruit Salsa and Cinnamon Chips,90.00,10
+8,Buffalo Chicken Wings,130.00,10
+9,Double Tomato Bruschetta,120.00,10
+10,Marinated Grilled Shrimp,150.00,10
+11,Ham and Potato Soup,60.00,10
+12,Boilermaker Tailgate Chili,80.00,10
+13,Spicy Chicken Soup,60.00,10
+14,Italian Sausage Soup,60.00,10
+15,Zuppa Toscana,60.00,10
+16,Gourmet Sweet Potato,80.00,10
+17,Gourmet Mushroom Risotto,80.00,10
+18,Onion Rings,80.00,10
+19,Mushroom with a Soy Sauce Glaze,80.00,10
+20,Oven-Roasted Asparagus,80.00,10
+21,Old Settlers' Baked Beans,80.00,10
+22,Roquefort Pear Salad,150.00,10
+23,Holiday Chicken Salad,150.00,10
+24,Broccoli Salad,150.00,10
+25,Strawberry Spinach Salad,150.00,10
+26,Mexican Bean Salad,150.00,10
+27,Chicken Cordon Bleu,220.00,10
+28,Baby Back Ribs,300.00,10
+29,Garlic Prime Rib,300.00,10
+30,Rosemary Roasted Turkey,280.00,10
+31,Roasted Rack of Lamb,320.00,10
+32,California Grilled Veggie Sandwich,180.00,10
+33,Grilled Cheese Sandwich,160.00,10
+34,Apple Pie,100.00,10
+35,Too Much Chocolate Cake,100.00,10
+36,Peanut Butter Cup Cookies,90.00,10
+37,White Chocolate Raspberry Cheesecake,120.00,10
+38,Banana Pudding,90.00,10
+39,OREO Truffles,120.00,10
+40,Banana Crumb Muffin,100.00,10
+41,Zucchini Bread,100.00,10
+42,Fluffy Pancakes,100.00,10
+43,Downeast Maine Pumpkin Bread,100.00,10
+44,Lemonade,30.00,10
+45,Chocolate Chocolate Milkshake,50.00,10
+46,Vanilla Milkshake,80.00,10
+47,Watermelon Milkshake,80.00,10
+48,Apple Milkshake,80.00,10
+49,Chocolate Mint Milkshake,80.00,10
+50,Avocado Milkshake,80.00,10

@@ -5,6 +5,6 @@ class ProductMaterial < ActiveRecord::Base
   validates_numericality_of :quantity
 
   def name
-    "#{quantity} #{raw_material.name}"
+    "#{quantity} #{raw_material.unit} #{raw_material.name}"
   end
 end

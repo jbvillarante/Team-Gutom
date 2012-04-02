@@ -3,5 +3,5 @@
     %li
       %h1= product.name
       %img{src: product.image}
-      %span= "P #{product.price}.00 (#{product.stock_qty} servings available)"
+      %span= "P #{product.price}0 (#{product.stock_qty.to_i} servings available)"
       %p.ingredients= product.raw_materials.collect(&:name).join(', ')

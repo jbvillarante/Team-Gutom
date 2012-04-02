@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120317172651) do
+ActiveRecord::Schema.define(:version => 20120402070659) do
 
   create_table "customers", :force => true do |t|
     t.string   "lastname"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
   create_table "product_materials", :force => true do |t|
     t.integer  "raw_material_id"
     t.integer  "product_id"
-    t.integer  "quantity"
+    t.float    "quantity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -67,8 +67,8 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
 
   create_table "products", :force => true do |t|
     t.string   "name"
-    t.integer  "price"
-    t.integer  "stock_qty"
+    t.float    "price"
+    t.float    "stock_qty"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image_file_name"
@@ -79,8 +79,8 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
 
   create_table "purchase_materials", :force => true do |t|
     t.integer  "purchase_transaction_id"
-    t.integer  "quantity"
-    t.integer  "total_price"
+    t.float    "quantity"
+    t.float    "total_price"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "raw_material_id"
@@ -110,11 +110,12 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
 
   create_table "raw_materials", :force => true do |t|
     t.integer  "supplier_id"
-    t.integer  "stock_qty"
-    t.integer  "price"
+    t.float    "stock_qty"
+    t.float    "price"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "unit"
   end
 
   add_index "raw_materials", ["supplier_id"], :name => "index_raw_materials_on_supplier_id"
@@ -122,8 +123,8 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
   create_table "sale_products", :force => true do |t|
     t.integer  "product_id"
     t.integer  "sale_transaction_id"
-    t.integer  "quantity"
-    t.integer  "total_price"
+    t.float    "quantity"
+    t.float    "total_price"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -133,7 +134,7 @@ ActiveRecord::Schema.define(:version => 20120317172651) do
 
   create_table "sale_transactions", :force => true do |t|
     t.integer  "employee_id"
-    t.integer  "amount_paid"
+    t.float    "amount_paid"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "customer_id"

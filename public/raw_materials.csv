@@ -1,105 +1,106 @@
-linguine pasta,1,1,20,10.00
-penne pasta,2,1,20,10.00
-fettuccine pasta,3,1,20,10.00
-lasagna noodles,4,1,20,10.00
-green onion,5,2,20,5.00
-basil,6,2,20,5.00
-black pepper,7,2,20,2.00
-garlic,8,2,20,5.00
-red bell pepper,9,2,20,5.00
-parsley,10,2,20,5.00
-tomato,11,2,20,5.00
-salt,12,2,20,2.00
-olive oil,13,3,20,2.00
-mushrooms,14,2,20,2.00
-Alfredo sauce,15,3,20,5.00
-heavy cream,16,3,20,15.00
-pesto,17,3,20,20.00
-butter,18,3,20,22.00
-parmesan cheese,19,4,20,30.00
-Ricotta cheese,20,4,20,25.00
-Romano cheese,21,4,20,25.00
-Swiss cheese,22,4,20,25.00
-cheddar cheese,23,4,20,20.00
-mozzarella cheese,24,4,20,25.00
-anchovy,25,5,20,10.00
-shrimp,26,5,20,30.00
-lobster,27,5,20,40.00
-scallops,28,5,20,30.00
-avocado,29,5,20,10.00
-lime,30,,20,3.00
-kiwi,31,,20,5.00
-apples,32,,20,5.00
-raspberries,33,,20,5.00
-strawberries,34,,20,5.00
-white sugar,35,,20,5.00
-brown sugar,36,,20,5.00
-cinnamon,37,,20,2.00
-tortilla chips,38,,20,5.00
-flour,39,,20
-paprika,40,,20
-cayenne pepper,41,,20
-chicken,42,,20
-garlic powder,43,,20
-vinegar,44,,20
-tomato sauce,45,,20
-potato,46,,20
-celery,47,,20
-ham,48,,20
-water,49,,20
-chicken broth,50,,20
-milk,51,,20
-ground beef,52,,20
-Italian sausage,53,,20
-chili beans,54,,20
-bacon,55,,20
-Worcestershire sauce,56,,20
-beef broth,57,,20
-carrots,58,,20
-zucchini,59,,20
-spinach,60,,20
-ice,61,,20
-vanilla ice cream,62,,20
-chocolate syrup,63,,20
-peppermint extract,64,,20
-watermelon,65,,20
-chocolate ice cream,66,,20
-dark chocolate bars,67,,20
-whipped cream,68,,20
-lemon juice,69,,20
-pumpkin puree,70,,20
-egg,71,,20
-vegetable oil,72,,20
-baking soda,73,,20
-nutmeg,74,,20
-banana,75,,20
-OREO,76,,20
-cream cheese,77,,20
-condensed milk,78,,20
-vanilla pudding mix,79,,20
-peanut butter,80,,20
-devil's food cake mix,81,,20
-chocolate pudding mix,82,,20
-sour cream,83,,20
-chocolote chips,84,,20
-crust,85,,20
-white bread,86,,20
-rosemary,87,,20
-bread crumbs,88,,20
-lamb,89,,20
-turkey,90,,20
-prime rib,91,,20
-pork baby back ribs,92,,20
-barbeque sauce,93,,20
-pork and beans,94,,20
-asparagus,95,,20
-soy sauce,96,,20
-rice,97,,20
-sweet potato,98,,20
-black beans,99,,20
-kidney beans,100,,20
-cannellini beans,101,,20
-broccoli,102,,20
-lettuce,103,,20
-Roquefort cheese,104,,20
-pears,105,,20
+1,20000,gram,50.00,linguine pasta
+2,20000,gram,50.00,penne pasta
+3,20000,gram,50.00,fettuccine pasta
+4,20000,gram,60.00,lasagna noodles
+5,10000,gram,100.00,green onion
+6,500,gram,20.00,basil
+7,500,gram,20.00,black pepper
+8,10000,gram,100.00,garlic
+9,10000,gram,100.00,red bell pepper
+10,1000,gram,50.00,parsley
+11,10000,gram,100.00,tomato
+12,500,gram,10.00,salt
+13,10000,ml,100.00,olive oil
+14,6000,gram,50.00,mushrooms
+15,20000,ounce,150.00,Alfredo sauce
+16,10000,ml,100.00,heavy cream
+17,5000,gram,80.00,pesto
+18,20000,gram,150.00,butter
+19,20000,gram,200.00,parmesan cheese
+20,20000,gram,200.00,Ricotta cheese
+21,20000,gram,200.00,Romano cheese
+22,20000,gram,200.00,Swiss cheese
+23,20000,gram,200.00,cheddar cheese
+24,20000,gram,200.00,mozzarella cheese
+25,20000,gram,100.00,anchovy
+26,20000,gram,120.00,shrimp
+27,20000,gram,150.00,lobster
+28,20000,gram,130.00,scallops
+29,100,piece,5000.00,avocado
+30,100,piece,3000.00,lime
+31,100,piece,7000.00,kiwi
+32,100,piece,6000.00,apples
+33,20000,gram,100.00,raspberries
+34,20000,gram,100.00,strawberries
+35,20000,gram,50.00,white sugar
+36,20000,gram,50.00,brown sugar
+37,500,gram,100.00,cinnamon
+38,10000,gram,120.00,tortilla chips
+39,10000,gram,100.00,flour
+40,500,gram,80.00,paprika
+41,500,gram,80.00,cayenne pepper
+42,20000,gram,100.00,chicken
+43,500,gram,50.00,garlic powder
+44,10000,ml,100.00,vinegar
+45,20000,ml,100.00,tomato sauce
+46,20000,gram,100.00,potato
+47,20000,gram,100.00,celery
+48,20000,gram,100.00,ham
+49,20000,ml,5.00,water
+50,20000,gram,100.00,chicken bouillon granules
+51,20000,ml,100.00,milk
+52,20000,gram,120.00,ground beef
+53,20000,gram,100.00,Italian sausage
+54,20000,gram,100.00,chili beans
+55,20000,gram,100.00,bacon
+56,20000,ml,100.00,Worcestershire sauce
+57,20000,ml,60.00,beef broth
+58,10000,gram,70.00,carrots
+59,10000,gram,80.00,zucchini
+60,10000,gram,30.00,spinach
+61,10000,piece,30.00,ice
+62,5000,ml,100.00,vanilla ice cream
+63,5000,ml,100.00,chocolate syrup
+64,500,drop,10.00,peppermint extract
+65,20000,gram,60.00,watermelon
+66,20000,ml,100.00,chocolate ice cream
+67,20000,gram,70.00,dark chocolate bars
+68,20000,ml,80.00,whipped cream
+69,2000,ml,40.00,lemon juice
+70,1000,ounce,65.00,pumpkin puree
+71,1000,piece,3000.00,egg
+72,20000,ml,86.00,vegetable oil
+73,20000,gram,35.00,baking soda
+74,500,gram,40.00,nutmeg
+75,20000,piece,5000.00,banana
+76,10000,gram,200.00,OREO
+77,20000,gram,215.00,cream cheese
+78,20000,ounce,100.00,condensed milk
+79,5000,gram,70.00,vanilla pudding mix
+80,5000,gram,75.00,peanut butter
+81,5000,gram,50.00,devil's food cake mix
+82,5000,gram,45.00,chocolate pudding mix
+83,20000,gram,80.00,sour cream
+84,5000,gram,90.00,chocolote chips
+85,1000,slice,60.00,crust
+86,4000,piece,75.00,white bread
+87,500,gram,30.00,rosemary
+88,1000,gram,95.00,bread crumbs
+89,20000,gram,130.00,lamb
+90,20000,gram,120.00,turkey
+91,20000,gram,130.00,prime rib
+92,20000,gram,130.00,pork baby back ribs
+93,10000,ounce,100.00,barbeque sauce
+94,20000,gram,100.00,pork and beans
+95,10000,gram,60.00,asparagus
+96,20000,ml,85.00,soy sauce
+97,20000,gram,30.00,rice
+98,100,piece,3000.00,sweet potato
+99,20000,gram,65.00,black beans
+100,20000,gram,65.00,kidney beans
+101,20000,gram,65.00,cannellini beans
+102,20000,gram,45.00,broccoli
+103,20000,gram,45.00,lettuce
+104,20000,gram,100.00,Roquefort cheese
+105,20000,piece,1000.00,pears
+106,1000,ml,45.00,chicken broth
